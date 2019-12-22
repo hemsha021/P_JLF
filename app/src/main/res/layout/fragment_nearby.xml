@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Nearby">
+
+    <fragment
+        android:id="@+id/mapNearby"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fragment>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/locationFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_my_location"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="7dp"
+        app:fabSize="mini"
+        app:elevation="3dp"
+        app:borderWidth="2sp"
+        app:backgroundTint="@color/grey_3"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <include
+        layout="@layout/sheet_nearby"/>
+
+</android.support.design.widget.CoordinatorLayout>
